@@ -5,19 +5,18 @@ A web application that will do many of the micromanaging tasks for D&D, along wi
 
 Technologies
 -------
-Front end
--------
-Bootstrap
-JQuery
+* Front end
+  * Bootstrap
+  * JQuery
 
-Repository
--------
-GitHub
+* Repository
+  * GitHub
 
-Hosting
--------
-AWS
-SQL Database
+* Hosting
+  * AWS (also for DNS)
+  
+* Database
+  * SQL Server
 
 
 Features
