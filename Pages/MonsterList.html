@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>D&D App | Monster List</title>
+    <link href="../assets/css/StyleSheet.css" rel="stylesheet" />
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../assets/js/jquery-3.1.0.min.js"></script>
+    <link href="../assets/css/main.css" rel="stylesheet" />
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/JavaScript.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="nav"></div>
+    <div class="margin panel panel-default ">
+        <div class="panel-body">
+            <div class=" margin">
+                <div class="row">
+                    <div class="col-md-2">
+                        <input type="text" class="form-control" id="monsterName" placeholder="Name" aria-describedby="sizing-addon1">
+                    </div>
+                    <div class="col-md-1">
+                        <input type="text" class="form-control" id="hp" placeholder="HP" aria-describedby="sizing-addon1">
+                    </div>
+                    <div class="col-md-1">
+                        <input type="text" class="form-control" id="ac" placeholder="AC" aria-describedby="sizing-addon1">
+                    </div>
+                    <div class="col-md-1">
+                        <input type="text" class="form-control" id="cr" placeholder="CR" aria-describedby="sizing-addon1">
+                    </div>
+                    <div class="col-md-1">
+                        <input type="text" class="form-control" id="xp" placeholder="XP" aria-describedby="sizing-addon1">
+                    </div>
+                    <div class="col-md-2">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="sizeBtn">
+                                Size
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" id="sizeChoice">
+                                <li><a href="#" id="fine">Fine </a></li>
+                                <li><a href="#" id="diminutive">Diminutive </a></li>
+                                <li><a href="#" id="tiny">Tiny </a></li>
+                                <li><a href="#" id="small">Small </a></li>
+                                <li><a href="#" id="medium">Medium </a></li>
+                                <li><a href="#" id="large">Large </a></li>
+                                <li><a href="#" id="huge">Huge </a></li>
+                                <li><a href="#" id="gargantuan">Gargantuan </a></li>
+                                <li><a href="#" id="colossal ">Colossal </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="typeBtn">
+                                Type
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" id="typeChoice">
+                                <li><a href="#" id="aberration">Aberration </a></li>
+                                <li><a href="#" id="beast">Beast </a></li>
+                                <li><a href="#" id="celestial">Celestial </a></li>
+                                <li><a href="#" id="construct">Construct </a></li>
+                                <li><a href="#" id="dragon">Dragon </a></li>
+                                <li><a href="#" id="elemental">Elemental </a></li>
+                                <li><a href="#" id="fey">Fey </a></li>
+                                <li><a href="#" id="fiend">Fiend </a></li>
+                                <li><a href="#" id="giant ">Giant </a></li>
+                                <li><a href="#" id="humanoid">Humanoid </a></li>
+                                <li><a href="#" id="monstrosity">Monstrosity </a></li>
+                                <li><a href="#" id="ooze">Ooze </a></li>
+                                <li><a href="#" id="plant">Plant </a></li>
+                                <li><a href="#" id="undead">Undead </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary" type="button" id="clearBtn">
+                            Clear 
+                        </button>
+                        <button class="btn btn-primary" type="button" id="searchBtn">
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+</body>
+</html>

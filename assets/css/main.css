@@ -1,0 +1,28 @@
+﻿/*Master*/
+
+body {
+}
+
+.margin-bottom {
+    margin-bottom: 55px;
+}
+
+.logo-padding {
+    float:left;padding:4px;font-size:18px;line-height:20px;height:50px;
+}
+
+.row-padding {
+    padding: 15px;
+}
+
+.center-image{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*Iniative Tracker*/
+
+.row-margin {
+    margin-bottom: 20px;
+}

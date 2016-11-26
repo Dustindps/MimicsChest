@@ -1,0 +1,3158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>D&D App | Xp Chart</title>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../assets/js/jquery-3.1.0.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <link href="../assets/css/main.css" rel="stylesheet" />
+    <link href="../assets/css/StyleSheet.css" rel="stylesheet" />
+    <script src="../assets/js/JavaScript.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="nav"></div>
+    <div class="margin panel panel-default ">
+        <div class="panel-body">
+            <div class="col-xs-9">
+
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button id="barbDiv" type="button" class="btn btn-primary active">Barbarian</button>
+                    <button id="bardDiv" type="button" class="btn btn-primary">Bard</button>
+                    <button id="clericDiv" type="button" class="btn btn-primary">Cleric</button>
+                    <button id="druidDiv" type="button" class="btn btn-primary">Druid</button>
+                    <button id="fighterDiv" type="button" class="btn btn-primary">Fighter</button>
+                    <button id="monkDiv" type="button" class="btn btn-primary">Monk</button>
+                    <button id="paladinDiv" type="button" class="btn btn-primary">Paladin</button>
+                    <button id="rangerDiv" type="button" class="btn btn-primary">Ranger</button>
+                    <button id="rogueDiv" type="button" class="btn btn-primary">Rogue</button>
+                    <button id="sorcererDiv" type="button" class="btn btn-primary">Sorcerer</button>
+                    <button id="warlockDiv" type="button" class="btn btn-primary">Warlock</button>
+                    <button id="wizardDiv" type="button" class="btn btn-primary">Wizard</button>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="table-responsive" id="barbTable">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <td>Level</td>
+                                        <td>Proficiency Bonus</td>
+                                        <td>Features</td>
+                                        <td>Rages</td>
+                                        <td>Rage Damage</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1st</td>
+                                        <td>+2</td>
+                                        <td>Rage, Unarmored Defense</td>
+                                        <td>2</td>
+                                        <td>+2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2nd</td>
+                                        <td>+2</td>
+                                        <td>Reckless Attack, Danger Sense</td>
+                                        <td>2</td>
+                                        <td>+2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3rd</td>
+                                        <td>+2</td>
+                                        <td>Primal Path</td>
+                                        <td>3</td>
+                                        <td>+2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4th</td>
+                                        <td>+2</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>3</td>
+                                        <td>+2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5th</td>
+                                        <td>+3</td>
+                                        <td>Extra Attack, Fast Movement</td>
+                                        <td>3</td>
+                                        <td>+2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6th</td>
+                                        <td>+3</td>
+                                        <td>Path Feature</td>
+                                        <td>4</td>
+                                        <td>+2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7th</td>
+                                        <td>+3</td>
+                                        <td>Feral Instinct</td>
+                                        <td>4</td>
+                                        <td>+2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8th</td>
+                                        <td>+3</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>4</td>
+                                        <td>+2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9th</td>
+                                        <td>+4</td>
+                                        <td>Brutal Critical (1 die)</td>
+                                        <td>4</td>
+                                        <td>+3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10th</td>
+                                        <td>+4</td>
+                                        <td>Path Feature</td>
+                                        <td>4</td>
+                                        <td>+3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11th</td>
+                                        <td>+4</td>
+                                        <td>Relentless Rage</td>
+                                        <td>4</td>
+                                        <td>+3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12th</td>
+                                        <td>+4</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>5</td>
+                                        <td>+3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13th</td>
+                                        <td>+5</td>
+                                        <td>Brutal Critical (2 dice)</td>
+                                        <td>5</td>
+                                        <td>+3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14th</td>
+                                        <td>+5</td>
+                                        <td>Path Feature</td>
+                                        <td>5</td>
+                                        <td>+3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15th</td>
+                                        <td>+5</td>
+                                        <td>Persistent Rage</td>
+                                        <td>5</td>
+                                        <td>+3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16th</td>
+                                        <td>+5</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>5</td>
+                                        <td>+4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17th</td>
+                                        <td>+6</td>
+                                        <td>Brutal Critical (3 dice)</td>
+                                        <td>6</td>
+                                        <td>+4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18th</td>
+                                        <td>+6</td>
+                                        <td>Indomitable Might</td>
+                                        <td>6</td>
+                                        <td>+4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19th</td>
+                                        <td>+6</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>6</td>
+                                        <td>+4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20th</td>
+                                        <td>+6</td>
+                                        <td>Primal Champion</td>
+                                        <td>Unlimited</td>
+                                        <td>+4</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="table-responsive hidden" id="bardTable">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <td>Level</td>
+                                        <td>Proficiency Bonus</td>
+                                        <td>Features</td>
+                                        <td>Cantrips Known</td>
+                                        <td>Spells Known</td>
+                                        <td>1st</td>
+                                        <td>2nd</td>
+                                        <td>3rd</td>
+                                        <td>4th</td>
+                                        <td>5th</td>
+                                        <td>6th</td>
+                                        <td>7th</td>
+                                        <td>8th</td>
+                                        <td>9th</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1st</td>
+                                        <td>+2</td>
+                                        <td>Spellcasting, Bardic Inspiration (d6)</td>
+                                        <td>2</td>
+                                        <td>4</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2nd</td>
+                                        <td>+2</td>
+                                        <td>Jack of All Trades, Song of Rest (d6)</td>
+                                        <td>2</td>
+                                        <td>5</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3rd</td>
+                                        <td>+2</td>
+                                        <td>Bard College, Expertise</td>
+                                        <td>2</td>
+                                        <td>6</td>
+                                        <td>4</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4th</td>
+                                        <td>+2</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>3</td>
+                                        <td>7</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5th</td>
+                                        <td>+3</td>
+                                        <td>Bardic Inspiration (d8), Font of Inspiration</td>
+                                        <td>3</td>
+                                        <td>8</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6th</td>
+                                        <td>+3</td>
+                                        <td>Countercharm, Bard College feature</td>
+                                        <td>3</td>
+                                        <td>9</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7th</td>
+                                        <td>+3</td>
+                                        <td>-</td>
+                                        <td>3</td>
+                                        <td>10</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8th</td>
+                                        <td>+3</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>3</td>
+                                        <td>11</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9th</td>
+                                        <td>+4</td>
+                                        <td>Song of Rest (d8)</td>
+                                        <td>3</td>
+                                        <td>12</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10th</td>
+                                        <td>+4</td>
+                                        <td>Bardic Inspiration (d10), Expertise, Magical Secrets</td>
+                                        <td>4</td>
+                                        <td>14</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11th</td>
+                                        <td>+4</td>
+                                        <td>-</td>
+                                        <td>4</td>
+                                        <td>15</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12th</td>
+                                        <td>+4</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>4</td>
+                                        <td>15</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13th</td>
+                                        <td>+5</td>
+                                        <td>Song of Rest (d10)</td>
+                                        <td>4</td>
+                                        <td>16</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14th</td>
+                                        <td>+5</td>
+                                        <td>Magical Secrets, Bard College feature</td>
+                                        <td>4</td>
+                                        <td>18</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15th</td>
+                                        <td>+5</td>
+                                        <td>Bardic Inspiration (d12)</td>
+                                        <td>4</td>
+                                        <td>19</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16th</td>
+                                        <td>+5</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>4</td>
+                                        <td>19</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17th</td>
+                                        <td>+6</td>
+                                        <td>Song of Rest (d12)</td>
+                                        <td>4</td>
+                                        <td>20</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18th</td>
+                                        <td>+6</td>
+                                        <td>Magical Secrets</td>
+                                        <td>4</td>
+                                        <td>22</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19th</td>
+                                        <td>+6</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>4</td>
+                                        <td>22</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20th</td>
+                                        <td>+6</td>
+                                        <td>Superior Inspiration</td>
+                                        <td>4</td>
+                                        <td>22</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="table-responsive hidden" id="clericTable">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <td>Level</td>
+                                        <td>Proficiency Bonus</td>
+                                        <td>Features</td>
+                                        <td>Cantrips Known</td>
+                                        <td>1st</td>
+                                        <td>2nd</td>
+                                        <td>3rd</td>
+                                        <td>4th</td>
+                                        <td>5th</td>
+                                        <td>6th</td>
+                                        <td>7th</td>
+                                        <td>8th</td>
+                                        <td>9th</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1st</td>
+                                        <td>+2</td>
+                                        <td>Spellcasting, Divine Domain</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2nd</td>
+                                        <td>+2</td>
+                                        <td>Channel Divinity (1/rest), Divine Domain feature</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>3rd</td>
+                                        <td>+2</td>
+                                        <td>-</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4th</td>
+                                        <td>+2</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5th</td>
+                                        <td>+3</td>
+                                        <td>Destroy Undead (CR 1/2)</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6th</td>
+                                        <td>+3</td>
+                                        <td>Channel Divinity (2/rest), Divine Domain feature</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7th</td>
+                                        <td>+3</td>
+                                        <td>-</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8th</td>
+                                        <td>+3</td>
+                                        <td>Ability Score Improvement, Destroy Undead (CR 1), Divine Domain feature</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9th</td>
+                                        <td>+4</td>
+                                        <td>-</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10th</td>
+                                        <td>+4</td>
+                                        <td>Divine Intervention</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11th</td>
+                                        <td>+4</td>
+                                        <td>Destroy Undead (CR 2)</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12th</td>
+                                        <td>+4</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13th</td>
+                                        <td>+5</td>
+                                        <td>-</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14th</td>
+                                        <td>+5</td>
+                                        <td>Destroy Undead (CR 3)</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15th</td>
+                                        <td>+5</td>
+                                        <td>-</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16th</td>
+                                        <td>+5</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17th</td>
+                                        <td>+6</td>
+                                        <td>Destroy Undead (CR 4), Divine Domain feature</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18th</td>
+                                        <td>+6</td>
+                                        <td>Channel Divinity (3/rest)</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19th</td>
+                                        <td>+6</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20th</td>
+                                        <td>+6</td>
+                                        <td>Divine Intervention Improvement</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="table-responsive hidden" id="druidTable">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <td>Level</td>
+                                        <td>Proficiency Bonus</td>
+                                        <td>Features</td>
+                                        <td>Cantrips Known</td>
+                                        <td>1st</td>
+                                        <td>2nd</td>
+                                        <td>3rd</td>
+                                        <td>4th</td>
+                                        <td>5th</td>
+                                        <td>6th</td>
+                                        <td>7th</td>
+                                        <td>8th</td>
+                                        <td>9th</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1st</td>
+                                        <td>+2</td>
+                                        <td>Druidic, Spellcasting</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2nd</td>
+                                        <td>+2</td>
+                                        <td>Wild Shape, Druid Circle</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3rd</td>
+                                        <td>+2</td>
+                                        <td>-</td>
+                                        <td>2</td>
+                                        <td>4</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4th</td>
+                                        <td>+2</td>
+                                        <td>Wild Shape Improvement, Ability Score Improvement</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5th</td>
+                                        <td>+3</td>
+                                        <td>-</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6th</td>
+                                        <td>+3</td>
+                                        <td>Druid Circle Feature</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7th</td>
+                                        <td>+3</td>
+                                        <td>-</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8th</td>
+                                        <td>+3</td>
+                                        <td>Wild Shape Improvement, Ability Score Improvement</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9th</td>
+                                        <td>+4</td>
+                                        <td>-</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10th</td>
+                                        <td>+4</td>
+                                        <td>Druid Circle Feature</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11th</td>
+                                        <td>+4</td>
+                                        <td>-</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12th</td>
+                                        <td>+4</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13th</td>
+                                        <td>+5</td>
+                                        <td>-</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14th</td>
+                                        <td>+5</td>
+                                        <td>Druid Circle Improvement</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15th</td>
+                                        <td>+5</td>
+                                        <td>-</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16th</td>
+                                        <td>+5</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17th</td>
+                                        <td>+6</td>
+                                        <td>-</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18th</td>
+                                        <td>+6</td>
+                                        <td>Timeless Body, Beast Spells</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19th</td>
+                                        <td>+6</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20th</td>
+                                        <td>+6</td>
+                                        <td>Archdruid</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="table-responsive hidden" id="fighterTable">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <td>Level</td>
+                                        <td>Proficiency Bonus</td>
+                                        <td>Features</td>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1st</td>
+                                        <td>+2</td>
+                                        <td>Fighting Style, Second Wind</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2nd</td>
+                                        <td>+2</td>
+                                        <td>Action Surge (one use)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3rd</td>
+                                        <td>+2</td>
+                                        <td>Martial Archetype</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4th</td>
+                                        <td>+2</td>
+                                        <td>Ability Score Improvement</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5th</td>
+                                        <td>+3</td>
+                                        <td>Extra Attack</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6th</td>
+                                        <td>+3</td>
+                                        <td>Ability Score Improvement</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7th</td>
+                                        <td>+3</td>
+                                        <td>Martial Archetype feature</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8th</td>
+                                        <td>+3</td>
+                                        <td>Ability Score Improvement</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9th</td>
+                                        <td>+4</td>
+                                        <td>Indomitable (one use)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10th</td>
+                                        <td>+4</td>
+                                        <td>Martial Archetype feature</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11th</td>
+                                        <td>+4</td>
+                                        <td>Extra Attack (2)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12th</td>
+                                        <td>+4</td>
+                                        <td>Ability Score Improvement</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13th</td>
+                                        <td>+5</td>
+                                        <td>Indomitable (two uses)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14th</td>
+                                        <td>+5</td>
+                                        <td>Ability Score Improvement</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15th</td>
+                                        <td>+5</td>
+                                        <td>Martial Archetype feature</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16th</td>
+                                        <td>+5</td>
+                                        <td>Ability Score Improvement</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17th</td>
+                                        <td>+6</td>
+                                        <td>Action Surge (two uses), Indomitable (three uses)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18th</td>
+                                        <td>+6</td>
+                                        <td>Martial Archetype feature</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19th</td>
+                                        <td>+6</td>
+                                        <td>Ability Score Improvement</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20th</td>
+                                        <td>+6</td>
+                                        <td>Extra Attack (3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="table-responsive hidden" id="monkTable">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <td>Level</td>
+                                        <td>Proficiency Bonus</td>
+                                        <td>Martial Arts</td>
+                                        <td>Ki Points</td>
+                                        <td>Unarmored Movement</td>
+                                        <td>Features</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1st</td>
+                                        <td>+2</td>
+                                        <td>1d4</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>Unarmored Defense, Martial Arts</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2nd</td>
+                                        <td>+2</td>
+                                        <td>1d4</td>
+                                        <td>2</td>
+                                        <td>+10ft.</td>
+                                        <td>Ki, Unarmored Movement</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3rd</td>
+                                        <td>+2</td>
+                                        <td>1d4</td>
+                                        <td>3</td>
+                                        <td>+10ft.</td>
+                                        <td>Monastic Tradition, Deflect Missiles</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4th</td>
+                                        <td>+2</td>
+                                        <td>1d4</td>
+                                        <td>3</td>
+                                        <td>+10ft.</td>
+                                        <td>Ability Score Improvement, Slow Fall</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5th</td>
+                                        <td>+3</td>
+                                        <td>1d6</td>
+                                        <td>5</td>
+                                        <td>+10ft.</td>
+                                        <td>Extra Attack, Stunning Strike</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6th</td>
+                                        <td>+3</td>
+                                        <td>1d6</td>
+                                        <td>6</td>
+                                        <td>+15ft.</td>
+                                        <td>Ki-Empowered Strikes, Monastic Tradition feature</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7th</td>
+                                        <td>+3</td>
+                                        <td>1d6</td>
+                                        <td>7</td>
+                                        <td>+15ft.</td>
+                                        <td>Evasion, Stillness of Mind</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8th</td>
+                                        <td>+3</td>
+                                        <td>1d6</td>
+                                        <td>8</td>
+                                        <td>15ft.</td>
+                                        <td>Ability Score Improvement</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9th</td>
+                                        <td>+4</td>
+                                        <td>1d6</td>
+                                        <td>9</td>
+                                        <td>15ft.</td>
+                                        <td>Unarmored Movement improvement</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10th</td>
+                                        <td>+4</td>
+                                        <td>1d6</td>
+                                        <td>10</td>
+                                        <td>+20ft.</td>
+                                        <td>Purity of Body</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11th</td>
+                                        <td>+4</td>
+                                        <td>1d8</td>
+                                        <td>11</td>
+                                        <td>+20ft.</td>
+                                        <td>Monastic Tradition feature</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12th</td>
+                                        <td>+4</td>
+                                        <td>1d8</td>
+                                        <td>12</td>
+                                        <td>+20ft.</td>
+                                        <td>Ability Score Improvement</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13th</td>
+                                        <td>+5</td>
+                                        <td>1d8</td>
+                                        <td>13</td>
+                                        <td>+20ft.</td>
+                                        <td>Tongue of the Sun and Moon</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14th</td>
+                                        <td>+5</td>
+                                        <td>1d8</td>
+                                        <td>14</td>
+                                        <td>+25ft.</td>
+                                        <td>Diamond Soul</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15th</td>
+                                        <td>+5</td>
+                                        <td>1d8</td>
+                                        <td>15</td>
+                                        <td>+25ft.</td>
+                                        <td>Timeless Body</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16th</td>
+                                        <td>+5</td>
+                                        <td>1d8</td>
+                                        <td>15</td>
+                                        <td>+25ft.</td>
+                                        <td>Ability Score Improvement</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17th</td>
+                                        <td>+6</td>
+                                        <td>1d10</td>
+                                        <td>17</td>
+                                        <td>+25ft.</td>
+                                        <td>Monastic Tradition feature</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18th</td>
+                                        <td>+6</td>
+                                        <td>1d10</td>
+                                        <td>17</td>
+                                        <td>+25ft.</td>
+                                        <td>Empty Body</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19th</td>
+                                        <td>+6</td>
+                                        <td>1d10</td>
+                                        <td>19</td>
+                                        <td>+30ft.</td>
+                                        <td>Ability Score Improvement</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20th</td>
+                                        <td>+6</td>
+                                        <td>1d10</td>
+                                        <td>20</td>
+                                        <td>+30ft.</td>
+                                        <td>Perfect Self</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="table-responsive hidden" id="paladinTable">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <td>Level</td>
+                                        <td>Proficiency Bonus</td>
+                                        <td>Features</td>
+                                        <td>1st</td>
+                                        <td>2nd</td>
+                                        <td>3rd</td>
+                                        <td>4th</td>
+                                        <td>5th</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1st</td>
+                                        <td>+2</td>
+                                        <td>Divine Sense, Lay on Hands</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>2nd</td>
+                                        <td>+2</td>
+                                        <td>Fighting Style, Spellcasting, Divine Smite</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3rd</td>
+                                        <td>+2</td>
+                                        <td>Divine Health, Sacred Oath</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4th</td>
+                                        <td>+2</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5th</td>
+                                        <td>+3</td>
+                                        <td>Extra Attack</td>
+                                        <td>4</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6th</td>
+                                        <td>+3</td>
+                                        <td>Aura of Protection</td>
+                                        <td>4</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7th</td>
+                                        <td>+3</td>
+                                        <td>Sacred Oath feature</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8th</td>
+                                        <td>+3</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9th</td>
+                                        <td>+4</td>
+                                        <td>-</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10th</td>
+                                        <td>+4</td>
+                                        <td>Aura of Courage</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11th</td>
+                                        <td>+4</td>
+                                        <td>Improved Divine Smite</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12th</td>
+                                        <td>+4</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13th</td>
+                                        <td>+5</td>
+                                        <td>-</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14th</td>
+                                        <td>+5</td>
+                                        <td>Cleansing Touch</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15th</td>
+                                        <td>+5</td>
+                                        <td>Sacred Oath feature</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16th</td>
+                                        <td>+5</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17th</td>
+                                        <td>+6</td>
+                                        <td>-</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18th</td>
+                                        <td>+6</td>
+                                        <td>Aura improvements</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19th</td>
+                                        <td>+6</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20th</td>
+                                        <td>+6</td>
+                                        <td>Sacred Oath feature</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="table-responsive hidden" id="rangerTable">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <td>Level</td>
+                                        <td>Proficiency Bonus</td>
+                                        <td>Features</td>
+                                        <td>Spells Known</td>
+                                        <td>1st</td>
+                                        <td>2nd</td>
+                                        <td>3rd</td>
+                                        <td>4th</td>
+                                        <td>5th</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1st</td>
+                                        <td>+2</td>
+                                        <td>Favored Enemy, Natural Explorer</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>2nd</td>
+                                        <td>+2</td>
+                                        <td>Fighting Style, Spellcasting</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3rd</td>
+                                        <td>+2</td>
+                                        <td>Ranger Archetype, Primeval Awareness</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4th</td>
+                                        <td>+2</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5th</td>
+                                        <td>+3</td>
+                                        <td>Extra Attack</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6th</td>
+                                        <td>+3</td>
+                                        <td>Favored Enemy and Natural Explorer improvements</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7th</td>
+                                        <td>+3</td>
+                                        <td>Ranger Archetype feature</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8th</td>
+                                        <td>+3</td>
+                                        <td>Ability Score Improvement, Land’s Stride</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9th</td>
+                                        <td>+4</td>
+                                        <td>-</td>
+                                        <td>6</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10th</td>
+                                        <td>+4</td>
+                                        <td>Natural Explorer improvement, Hide in Plain Sight</td>
+                                        <td>6</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11th</td>
+                                        <td>+4</td>
+                                        <td>Ranger Archetype feature</td>
+                                        <td>7</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12th</td>
+                                        <td>+4</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>7</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13th</td>
+                                        <td>+5</td>
+                                        <td>-</td>
+                                        <td>8</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14th</td>
+                                        <td>+5</td>
+                                        <td>Favored Enemy improvement, Vanish</td>
+                                        <td>8</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15th</td>
+                                        <td>+5</td>
+                                        <td>Ranger Archetype feature</td>
+                                        <td>9</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16th</td>
+                                        <td>+5</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>9</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17th</td>
+                                        <td>+6</td>
+                                        <td>-</td>
+                                        <td>10</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18th</td>
+                                        <td>+6</td>
+                                        <td>Feral Senses</td>
+                                        <td>10</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19th</td>
+                                        <td>+6</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>11</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20th</td>
+                                        <td>+6</td>
+                                        <td>Foe Slayer</td>
+                                        <td>11</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="table-responsive hidden" id="rogueTable">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <td>Level</td>
+                                        <td>Proficiency Bonus</td>
+                                        <td>Sneak Attack</td>
+                                        <td>Features</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1st</td>
+                                        <td>+2</td>
+                                        <td>1d6</td>
+                                        <td>Expertise, Sneak Attack, Thieves’ Cant</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2nd</td>
+                                        <td>+2</td>
+                                        <td>1d6</td>
+                                        <td>Cunning Action</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3rd</td>
+                                        <td>+2</td>
+                                        <td>2d6</td>
+                                        <td>Roguish Archetype</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4th</td>
+                                        <td>+2</td>
+                                        <td>2d6</td>
+                                        <td>Ability Score Improvement</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5th</td>
+                                        <td>+3</td>
+                                        <td>3d6</td>
+                                        <td>Uncanny Dodge</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6th</td>
+                                        <td>+3</td>
+                                        <td>3d6</td>
+                                        <td>Expertise</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7th</td>
+                                        <td>+3</td>
+                                        <td>4d6</td>
+                                        <td>Evasion</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8th</td>
+                                        <td>+3</td>
+                                        <td>4d6</td>
+                                        <td>Ability Score Improvement</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9th</td>
+                                        <td>+4</td>
+                                        <td>5d6</td>
+                                        <td>Roguish Archetype feature</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10th</td>
+                                        <td>+4</td>
+                                        <td>5d6</td>
+                                        <td>Ability Score Improvement</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11th</td>
+                                        <td>+4</td>
+                                        <td>6d6</td>
+                                        <td>Reliable Talent </td>
+                                    </tr>
+                                    <tr>
+                                        <td>12th</td>
+                                        <td>+4</td>
+                                        <td>6d6</td>
+                                        <td>Ability Score Improvement</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13th</td>
+                                        <td>+5</td>
+                                        <td>7d6</td>
+                                        <td>Roguish Archetype feature </td>
+                                    </tr>
+                                    <tr>
+                                        <td>14th</td>
+                                        <td>+5</td>
+                                        <td>7d6</td>
+                                        <td>Blindsense</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15th</td>
+                                        <td>+5</td>
+                                        <td>8d6</td>
+                                        <td>Slippery Mind</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16th</td>
+                                        <td>+5</td>
+                                        <td>8d6</td>
+                                        <td>Ability Score Improvement</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17th</td>
+                                        <td>+6</td>
+                                        <td>9d6</td>
+                                        <td>Roguish Archetype feature </td>
+                                    </tr>
+                                    <tr>
+                                        <td>18th</td>
+                                        <td>+6</td>
+                                        <td>9d6</td>
+                                        <td>Elusive</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19th</td>
+                                        <td>+6</td>
+                                        <td>10d6</td>
+                                        <td>Ability Score Improvement</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20th</td>
+                                        <td>+6</td>
+                                        <td>10d6</td>
+                                        <td>Stroke of Luck</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="table-responsive hidden" id="sorcererTable">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <td>Level</td>
+                                        <td>Proficiency Bonus</td>
+                                        <td>Sorcery Points</td>
+                                        <td>Features</td>
+                                        <td>Cantrips Known</td>
+                                        <td>Spells Known</td>
+                                        <td>1st</td>
+                                        <td>2nd</td>
+                                        <td>3rd</td>
+                                        <td>4th</td>
+                                        <td>5th</td>
+                                        <td>6th</td>
+                                        <td>7th</td>
+                                        <td>8th</td>
+                                        <td>9th</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1st</td>
+                                        <td>+2</td>
+                                        <td>-</td>
+                                        <td>Spellcasting, Sorcerous Origin</td>
+                                        <td>4</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2nd</td>
+                                        <td>+2</td>
+                                        <td>2</td>
+                                        <td>Font of Magic</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3rd</td>
+                                        <td>+2</td>
+                                        <td>3</td>
+                                        <td>Metamagic</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4th</td>
+                                        <td>+2</td>
+                                        <td>4</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>5</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5th</td>
+                                        <td>+3</td>
+                                        <td>5</td>
+                                        <td>-</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6th</td>
+                                        <td>+3</td>
+                                        <td>6</td>
+                                        <td>Sorcerous Origin feature</td>
+                                        <td>5</td>
+                                        <td>7</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7th</td>
+                                        <td>+3</td>
+                                        <td>-</td>
+                                        <td>5</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8th</td>
+                                        <td>+3</td>
+                                        <td>8</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>5</td>
+                                        <td>9</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9th</td>
+                                        <td>+4</td>
+                                        <td>9</td>
+                                        <td>-</td>
+                                        <td>5</td>
+                                        <td>10</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10th</td>
+                                        <td>+4</td>
+                                        <td>10</td>
+                                        <td>Metamagic</td>
+                                        <td>6</td>
+                                        <td>11</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11th</td>
+                                        <td>+4</td>
+                                        <td>11</td>
+                                        <td>-</td>
+                                        <td>6</td>
+                                        <td>12</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12th</td>
+                                        <td>+4</td>
+                                        <td>12</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>6</td>
+                                        <td>12</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13th</td>
+                                        <td>+5</td>
+                                        <td>13</td>
+                                        <td>-</td>
+                                        <td>6</td>
+                                        <td>13</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14th</td>
+                                        <td>+5</td>
+                                        <td>14</td>
+                                        <td>Sorcerous Origin feature</td>
+                                        <td>6</td>
+                                        <td>13</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15th</td>
+                                        <td>+5</td>
+                                        <td>15</td>
+                                        <td>-</td>
+                                        <td>6</td>
+                                        <td>14</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16th</td>
+                                        <td>+5</td>
+                                        <td>16</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>6</td>
+                                        <td>14</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17th</td>
+                                        <td>+6</td>
+                                        <td>17</td>
+                                        <td>Metamagic</td>
+                                        <td>6</td>
+                                        <td>15</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18th</td>
+                                        <td>+6</td>
+                                        <td>18</td>
+                                        <td>Sorcerous Origin feature</td>
+                                        <td>6</td>
+                                        <td>15</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19th</td>
+                                        <td>+6</td>
+                                        <td>19</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>6</td>
+                                        <td>15</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20th</td>
+                                        <td>+6</td>
+                                        <td>20</td>
+                                        <td>Sorcerous Restoration</td>
+                                        <td>6</td>
+                                        <td>15</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="table-responsive hidden" id="warlockTable">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <td>Level</td>
+                                        <td>Proficiency Bonus</td>
+                                        <td>Features</td>
+                                        <td>Cantrips Known</td>
+                                        <td>Spells Known</td>
+                                        <td>Spell Slots</td>
+                                        <td>Slot Level</td>
+                                        <td>Incantation Known</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1st</td>
+                                        <td>+2</td>
+                                        <td>Otherworldly Patron, Pact Magic</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1st</td>
+                                        <td>-</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>2nd</td>
+                                        <td>+2</td>
+                                        <td>Eldritch Invocations</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>1st</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3rd</td>
+                                        <td>+2</td>
+                                        <td>Pact Boon</td>
+                                        <td>2</td>
+                                        <td>4</td>
+                                        <td>2</td>
+                                        <td>2nd</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4th</td>
+                                        <td>+2</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>3</td>
+                                        <td>5</td>
+                                        <td>2</td>
+                                        <td>2nd</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5th</td>
+                                        <td>+3</td>
+                                        <td>-</td>
+                                        <td>3</td>
+                                        <td>6</td>
+                                        <td>2</td>
+                                        <td>3rd</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6th</td>
+                                        <td>+3</td>
+                                        <td>Otherworldly Patron feature</td>
+                                        <td>3</td>
+                                        <td>7</td>
+                                        <td>2</td>
+                                        <td>3rd</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7th</td>
+                                        <td>+3</td>
+                                        <td>-</td>
+                                        <td>3</td>
+                                        <td>8</td>
+                                        <td>2</td>
+                                        <td>4th</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8th</td>
+                                        <td>+3</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>3</td>
+                                        <td>9</td>
+                                        <td>2</td>
+                                        <td>4th</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9th</td>
+                                        <td>+4</td>
+                                        <td>-</td>
+                                        <td>3</td>
+                                        <td>10</td>
+                                        <td>2</td>
+                                        <td>5th</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10th</td>
+                                        <td>+4</td>
+                                        <td>Otherworldly Patron feature</td>
+                                        <td>4</td>
+                                        <td>10</td>
+                                        <td>2</td>
+                                        <td>5th</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11th</td>
+                                        <td>+4</td>
+                                        <td>Mystic Arcanum (6th level)</td>
+                                        <td>4</td>
+                                        <td>11</td>
+                                        <td>3</td>
+                                        <td>5th</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12th</td>
+                                        <td>+4</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>4</td>
+                                        <td>11</td>
+                                        <td>3</td>
+                                        <td>5th</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13th</td>
+                                        <td>+5</td>
+                                        <td>Mystic Arcanum (7th level)</td>
+                                        <td>4</td>
+                                        <td>12</td>
+                                        <td>3</td>
+                                        <td>5th</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14th</td>
+                                        <td>+5</td>
+                                        <td>Otherworldly Patron feature</td>
+                                        <td>4</td>
+                                        <td>12</td>
+                                        <td>3</td>
+                                        <td>5th</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15th</td>
+                                        <td>+5</td>
+                                        <td>Mystic Arcanum (8th level)</td>
+                                        <td>4</td>
+                                        <td>13</td>
+                                        <td>3</td>
+                                        <td>5th</td>
+                                        <td>7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16th</td>
+                                        <td>+5</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>4</td>
+                                        <td>13</td>
+                                        <td>3</td>
+                                        <td>5th</td>
+                                        <td>7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17th</td>
+                                        <td>+6</td>
+                                        <td>Mystic Arcanum (9th level)</td>
+                                        <td>4</td>
+                                        <td>14</td>
+                                        <td>4</td>
+                                        <td>5th</td>
+                                        <td>7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18th</td>
+                                        <td>+6</td>
+                                        <td>-</td>
+                                        <td>4</td>
+                                        <td>14</td>
+                                        <td>4</td>
+                                        <td>5th</td>
+                                        <td>8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19th</td>
+                                        <td>+6</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>4</td>
+                                        <td>15</td>
+                                        <td>4</td>
+                                        <td>5th</td>
+                                        <td>8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20th</td>
+                                        <td>+6</td>
+                                        <td>Eldritch Master</td>
+                                        <td>4</td>
+                                        <td>15</td>
+                                        <td>4</td>
+                                        <td>5th</td>
+                                        <td>8</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="table-responsive hidden" id="wizardTable">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <td>Level</td>
+                                        <td>Proficiency Bonus</td>
+                                        <td>Features</td>
+                                        <td>Cantrips Known</td>
+                                        <td>1st</td>
+                                        <td>2nd</td>
+                                        <td>3rd</td>
+                                        <td>4th</td>
+                                        <td>5th</td>
+                                        <td>6th</td>
+                                        <td>7th</td>
+                                        <td>8th</td>
+                                        <td>9th</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1st</td>
+                                        <td>+2</td>
+                                        <td>Spellcasting, Arcane Recovery</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2nd</td>
+                                        <td>+2</td>
+                                        <td>Arcane Tradition</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3rd</td>
+                                        <td>+2</td>
+                                        <td>-</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4th</td>
+                                        <td>+2</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5th</td>
+                                        <td>+3</td>
+                                        <td>-</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6th</td>
+                                        <td>+3</td>
+                                        <td>Arcane Tradition feature</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7th</td>
+                                        <td>+3</td>
+                                        <td>-</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8th</td>
+                                        <td>+3</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9th</td>
+                                        <td>+4</td>
+                                        <td>-</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10th</td>
+                                        <td>+4</td>
+                                        <td>Arcane Tradition feature</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11th</td>
+                                        <td>+4</td>
+                                        <td>-</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12th</td>
+                                        <td>+4</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13th</td>
+                                        <td>+5</td>
+                                        <td>-</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14th</td>
+                                        <td>+5</td>
+                                        <td>Arcane Tradition feature</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15th</td>
+                                        <td>+5</td>
+                                        <td>-</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16th</td>
+                                        <td>+5</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17th</td>
+                                        <td>+6</td>
+                                        <td>-</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18th</td>
+                                        <td>+6</td>
+                                        <td>Spell Mastery</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19th</td>
+                                        <td>+6</td>
+                                        <td>Ability Score Improvement</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20th</td>
+                                        <td>+6</td>
+                                        <td>Signature Spell</td>
+                                        <td>5</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!--Xp Table-->
+            <div class="col-xs-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <td>Level</td>
+                                        <td>Xp needed for next level</td>
+                                        <td>Total xp needed for this level</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1st</td>
+                                        <td>300</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2st</td>
+                                        <td>600</td>
+                                        <td>300</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3st</td>
+                                        <td>1,800</td>
+                                        <td>900</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4th</td>
+                                        <td>3,800</td>
+                                        <td>2,700</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5th</td>
+                                        <td>7,500</td>
+                                        <td>6,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6th</td>
+                                        <td>9,000</td>
+                                        <td>14,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7th</td>
+                                        <td>11,000</td>
+                                        <td>23,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8th</td>
+                                        <td>14,000</td>
+                                        <td>34,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9th</td>
+                                        <td>16,000</td>
+                                        <td>48,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10th</td>
+                                        <td>21,000</td>
+                                        <td>64,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11th</td>
+                                        <td>15,000</td>
+                                        <td>85,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12th</td>
+                                        <td>20,000</td>
+                                        <td>100,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13th</td>
+                                        <td>20,000</td>
+                                        <td>120,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14th</td>
+                                        <td>25,000</td>
+                                        <td>140,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15th</td>
+                                        <td>30,000</td>
+                                        <td>165,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16th</td>
+                                        <td>30,000</td>
+                                        <td>195,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17th</td>
+                                        <td>40,000</td>
+                                        <td>225,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18th</td>
+                                        <td>40,000</td>
+                                        <td>265,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19th</td>
+                                        <td>50,000</td>
+                                        <td>305,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20th</td>
+                                        <td>-</td>
+                                        <td>355,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
