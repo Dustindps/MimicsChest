@@ -22,10 +22,12 @@ SQL Database
 
 Features
 -------
-D&D currency calculator
-Easy conversion calculator, where a user can plug in a number for a type of currency, and the calculator shows the same value in the other forms of currency
-Ex: User inputs 1 gold, which the calculator puts out that 1 gold is equal to 100 copper or 10 silver
+*D&D currency calculator 
+  *Easy conversion calculator, where a user can plug in a number for a type of currency, and the calculator shows the same value in the other forms of currency
+    *Ex: User inputs 1 gold, which the calculator puts out that 1 gold is equal to 100 copper or 10 silver
+
 Add calculate button for mobile views
+
 Make page mobile responsive
 Weight Calculator / Inventory Manager
 Make inventory sortable, in the sense when a user adds an item, it is sorted by most weight to least weight in their inventory, or vis versa. 
