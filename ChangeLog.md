@@ -35,5 +35,6 @@ Fixed bugs with initative page
 Fixed formatting on initative page
 
 
-
-***Uploaded to GIT for version control***
+-----------------------------------------------------------------------------
+Uploaded to GIT for version control
+-----------------------------------------------------------------------------
