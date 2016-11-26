@@ -52,8 +52,8 @@ Features
   * Allow user to input current accumulative xp, and will tell the user how much xp they need until next level
 Provide Xp chart
 
-
-* Nice to haves
+Nice to haves
+-------
 * Easy search spell list
   * A list that can be searched by keywords or other filtering parameters, such as class, level, school, if it is a ritual, casting time, if it requires components, or if it requires concentration
 * Encounter Size calculator
